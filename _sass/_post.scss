@@ -1,0 +1,17 @@
+.post-navigation {
+    margin: 60px 0;
+    width: 100%;
+    .prev, .next {
+        padding: 40px;
+        background-color: $feature-op;
+        color: $white;
+        margin: 0;
+        text-align: center;
+        &:hover {
+            background-color: $feature;
+        }
+    }
+}
+#disqus_thread {
+    margin-top: 60px;
+}

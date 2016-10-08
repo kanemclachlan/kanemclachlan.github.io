@@ -1,0 +1,15 @@
+.navbar {
+    background-color: $white;
+    text-transform: uppercase;
+    a {
+        color: black;
+    }
+    li:hover, li:focus, li:selected {
+        background: $feature;
+    }
+    .navbar-toggle {
+        .icon-bar {
+            background-color: black;
+        }
+    }
+}

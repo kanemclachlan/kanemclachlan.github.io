@@ -1,0 +1,21 @@
+body.Contact {
+    & > .container {
+        padding: 100px 0;
+    }
+    .social-items {
+        font-size: 30px;
+        display: flex;
+        flex: 0 1 auto;
+        flex-flow: wrap row;
+        li {
+            flex-grow: 1;
+            flex-basis: 33%;
+        }
+    }
+}
+form {
+    input.form-control, textarea.form-control {
+        border-radius: 0;
+        border: 1px $feature solid;
+    }
+}

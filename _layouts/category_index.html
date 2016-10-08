@@ -1,0 +1,16 @@
+---
+layout: default
+exclude: yes
+catpage: yes
+---
+<div class="recent-blg row">
+    {% for post in site.categories[page.category] %}
+    <a href="{{ post.url }}" class="col-md-4" style="background-image: url('{{ post.featured }}')">
+        <ul>
+            <li>{{ post.categories }}</li>
+            <li>{{ post.title }}</li>
+            <li>{{ post.date | date: '%B %d, %Y' }}</li>
+        </ul>
+    </a>
+    {% endfor %}
+</div>

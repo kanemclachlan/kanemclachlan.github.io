@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="blog-post row">
+    {% if page.date %}
+    <div class="col-md-4">
+        <img src="{{ page.featured }}" />
+    </div>
+    {% endif %}
+    <div class="col-md-8">
+    {{ content }}
+    </div>
+</div>
+
+<div class="post-navigation row">
+  {% if page.previous.url %}
+    <a class="prev pull-left col-xs-6 {% unless page.previous.url %}col-xs-12{% endunless %}" href="{{ page.previous.url }}"><span class="fa fa-chevron-left"></span> {{ page.previous.title }}</a>
+    <!--{% if page.next.url and page.previous.url %}
+    <span>&nbsp;|&nbsp;</span>
+    {% endif %}-->
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next pull-right col-xs-6" href="{{ page.next.url }}">{{ page.next.title }} <span class="fa fa-chevron-right"></span></a>
+  {% endif %}
+</div>
+
+<div id="disqus_thread"></div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

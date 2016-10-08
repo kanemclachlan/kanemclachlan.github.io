@@ -1,0 +1,35 @@
+<nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="/">{{ site.title }}</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav">
+                {% include social.html %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/blog/">Blog
+                                            <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/blog/">All Posts</a></li>
+                        {% for page in site.pages %}
+                        {% if page.catpage %}
+                        <li><a href="{{ page.url }}">{{ page.title | remove: "Blog" }}</a></li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% for node in site.pages %} {% unless node.exclude %}
+                <li {% if page.url==node.url %}class="active" {% endif %}><a href="{{ node.url }}">{{ node.title }}</a></li>
+                
+                {% endunless %} {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

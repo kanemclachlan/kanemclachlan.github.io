@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kane McLachlan</title>
+    <description>Description for search engines.
+</description>
+    <link>http://kanemclachlan.com.au/</link>
+    <atom:link href="http://kanemclachlan.com.au/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 08 Oct 2016 08:00:51 +0000</pubDate>
+    <lastBuildDate>Sat, 08 Oct 2016 08:00:51 +0000</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Second Post</title>
+        <description>&lt;p&gt;This is the second post.&lt;/p&gt;
+
+&lt;h1 id=&quot;you-can-format-as-you-want-etc&quot;&gt;You can format as you want etc.&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3-us-west-1.amazonaws.com/powr/defaults/image-slider2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Images and stuff&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Oct 2016 14:40:39 +0000</pubDate>
+        <link>http://kanemclachlan.com.au/blog/science/welcome-to-jekyll.2</link>
+        <guid isPermaLink="true">http://kanemclachlan.com.au/blog/science/welcome-to-jekyll.2</guid>
+        
+        
+        <category>Science</category>
+        
+      </item>
+    
+      <item>
+        <title>Third Post</title>
+        <description>&lt;p&gt;Third post&lt;/p&gt;
+</description>
+        <pubDate>Fri, 07 Oct 2016 14:40:39 +0000</pubDate>
+        <link>http://kanemclachlan.com.au/blog/health/welcome-to-jekyll.1</link>
+        <guid isPermaLink="true">http://kanemclachlan.com.au/blog/health/welcome-to-jekyll.1</guid>
+        
+        
+        <category>Health</category>
+        
+      </item>
+    
+      <item>
+        <title>First Post</title>
+        <description>&lt;p&gt;first post&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Oct 2016 14:40:39 +0000</pubDate>
+        <link>http://kanemclachlan.com.au/blog/food/welcome-to-jekyll</link>
+        <guid isPermaLink="true">http://kanemclachlan.com.au/blog/food/welcome-to-jekyll</guid>
+        
+        
+        <category>Food</category>
+        
+      </item>
+    
+  </channel>
+</rss>

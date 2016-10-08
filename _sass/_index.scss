@@ -1,0 +1,105 @@
+.jumbotron {
+    @extend .titlebar;
+    margin-top: $navbar-height;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    background: {
+        attachment: fixed;
+        size: cover;
+    }
+    &:after {
+        content: "";
+        @include abst(0,0,0,0);
+        @include overlay($feature,0.4);
+        z-index: 1;
+    }
+    h1 {
+        font: {
+            family: 'Rubik Mono One', sans-serif;
+            weight: bolder;
+            size: 72px;
+        }
+        color: $white-op;
+    }
+    .container {
+        z-index: 4;
+    }
+}
+.call-action {
+    @include verticalalign(center);
+    height: 70px;
+    background-color: $light;
+    color: black;
+    .pull-left, .pull-right {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .btn {
+        background-color: transparent;
+        border: 2px $feature solid;
+        color: black;
+        &:hover {
+            background-color: $feature;
+            color: $white;
+        }
+    }
+}
+.recent-blg {
+    box-sizing: border-box;
+    & > a {
+        background-color: $dark-op;
+        height: 180px;
+        @include verticalalign(flex-end);
+        justify-content: flex-start;
+        padding: 10px;
+        box-sizing: border-box !important;
+        position: relative;
+        &:after {
+            content: "";
+            @include abst(0,0,0,0);
+            @include overlay($feature,0.3);
+            z-index: 1;
+            transition: opacity 1s;
+        }
+        &:hover {
+            color: $white !important;
+            &:after {
+                opacity: 0.6;
+                transition: opacity 1s;
+            }
+            ul {
+                padding-bottom: 30%;
+                transition: padding-bottom 1s;
+            }
+        }
+        ul {
+            box-sizing: border-box;
+            list-style: none;
+            padding: 0;
+            margin-left: 20px;
+            max-width: 90%;
+            z-index: 3;
+            transition: padding-bottom 1s;
+            li {
+                &:nth-of-type(1) {
+                    text-transform: uppercase;
+                }
+                &:nth-of-type(2) {
+                    font-weight: bold;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+    h1 {
+        margin: 20px 40px 10px 40px;
+    }
+}
+.banner.quotes {
+    padding: 100px 0;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}

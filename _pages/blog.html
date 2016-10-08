@@ -1,0 +1,30 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+exclude: yes
+titlebar: http://www.walldevil.com/wallpapers/a79/2755-wallpaper-beautiful-ultra-definition-christmas-retina-book-album-third-quarter-mac.jpg
+---
+<div class="col-md-10">
+<div class="recent-blg row">
+    {% for post in site.posts %}
+    <a href="{{ post.url }}" class="col-md-4" style="background-image: url('{{ post.featured }}')">
+        <ul>
+            <li>{{ post.categories }}</li>
+            <li>{{ post.title }}</li>
+            <li>{{ post.date | date: '%B %d, %Y' }}</li>
+        </ul>
+    </a>
+    {% endfor %}
+</div>
+</div>
+<div class="col-md-2">
+    <h3>Categories:</h3>
+    <ul>
+        {% for page in site.pages %}
+        {% if page.catpage %}
+        <li><a href="{{ page.url }}">{{ page.title | capitalize }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>

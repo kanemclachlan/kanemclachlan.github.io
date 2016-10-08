@@ -1,0 +1,10 @@
+// solid colours
+$feature: '{{ site.colourfeature }}';
+$dark: #1f1f1f;
+$light: #f1f1f1;
+$white: white;
+
+// opaque colours
+$feature-op: rgba(0,128,128,0.6);
+$white-op: rgba(255,255,255,0.6);
+$dark-op: rgba(31,31,31,0.6)

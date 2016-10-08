@@ -1,0 +1,12 @@
+.footer {
+    padding: 60px 0;
+    background-color: $dark;
+    color: $white;
+    a {
+        color: $white;
+    }
+    ul {
+        list-style: none;
+        box-sizing: border-box;
+    }
+}

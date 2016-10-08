@@ -1,0 +1,27 @@
+title: Kane McLachlan
+description: >
+  Description for search engines.
+baseurl: ""
+url: "http://kanemclachlan.com.au"
+markdown: kramdown
+include: [_pages]
+social:
+    - name: Facebook
+      base: http://facebook.com
+      username: /kane.mclachlan.7
+      fa: facebook
+    - name: Youtube
+      base: http://youtube.com
+      username: /kanemc
+      fa: youtube-play
+permalink: /blog/:categories/:title
+sass:
+  style: compressed
+quotes:
+  - content: This is the first quote.
+  - content: Second quote.
+  - content: Third quote.
+jumbotron: http://i.imgur.com/GZIQLNm.jpg
+category_dir: /blog
+category_title_prefix: ''
+colourfeature: '#567438'

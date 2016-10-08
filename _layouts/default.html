@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/unslider-master/dist/css/unslider.css">
+    <link rel="stylesheet" href="/unslider-master/dist/css/unslider-dots.css">
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
+</head>
+
+<body class="{{ page.title }}">
+
+    {% include header.html %} {% if page.url != '/' %} {% include titlebar.html %}
+    <div class="container">
+        {{ content }}
+    </div>
+    {% else %} {{ content }} {% endif %}
+    
+    {% include footer.html %}
+
+    {% include SCRIPTS.html %}
+    
+    {% if page.catpage %}
+    <style>
+        .titlebar {
+            text-transform: capitalize;
+        }
+    </style>
+    {% endif %}
+</body>
+
+</html>

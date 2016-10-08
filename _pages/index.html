@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+permalink: /
+exclude: yes
+---
+<div class="jumbotron" style="background-image:url('{{ site.jumbotron }}')">
+    <div class="container">
+        <h1>Kane McLachlan</h1>
+        <p>Sharing Life Lessons</p>
+    </div>
+</div>
+<div class="call-action">
+    <div class="container">
+        <div class="pull-left">Want to get in touch?</div>
+        <a href="/contact"><btn class="pull-right btn btn-large btn-success">Contact Now!</btn></a>
+    </div>
+</div>
+<div class="recent-blg row">
+    <h1>Recent Blog Posts:</h1>
+    {% for post in site.posts limit:6 %}
+    <a href="{{ post.url }}" class="col-md-4" style="background-image: url('{{ post.featured }}')">
+        <ul>
+            <li>{{ post.categories }}</li>
+            <li>{{ post.title }}</li>
+            <li>{{ post.date | date: '%B %d, %Y' }}</li>
+        </ul>
+    </a>
+    {% endfor %}
+</div>
+<div class="quotes banner">
+    <span class="fa fa-quote-left"></span>
+    <ul>
+        {% for quote in site.quotes %}
+        <li>{{ quote.content }}</li>
+        {% endfor %}
+    </ul>
+</div>
